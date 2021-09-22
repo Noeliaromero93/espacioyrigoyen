@@ -20,55 +20,85 @@
     <meta name="keywords" content="Salon de eventos, fiestas, celebracion, zona norte, multi espacio, contacto">
 
 </head>
-<!-- Formulario -->
-<div class="container">
 
-    <body class="fondoColor">
-        <h1 class="animate__animated animate__bounce">Formulario de contacto</h1>
+<body>
+
+    <!-- menu - navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="Imagenes/logo.png" alt="" width="100" height="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quienes_somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--fin navbar -->
+        <!-- Formulario -->
         <form>
-            <p class="textoGrande"> ¿Es el primer evento que realiza con nosotros?</p>
-            <p>SI</p>
-            <input type="radio" name="evento" value="SI">
-            <p>NO</p>
-            <input type="radio" name="evento" value="No">
+            <h1 class="formularioH1">Formulario de contacto</h1>
+            <input type="text" name=nombre placeholder="Nombre y Apellido">
+            <input type="text" name=correo placeholder="Correo Electrónico">
+            <input type="text" name=celular placeholder="Celular">
+            <textarea name="mensaje"
+                placeholder="Escriba su consulta, nos pondremos en contacto a la brevedad"></textarea>
+            <input type="button" value="Enviar" id="boton">
+
+            <div class="container mt-5">
+                <p>¡Seguinos en las redes y enterate de todas las novedades!</p>
+                <div>
+                    <ul>
+                        <img src="Imagenes/instagram.png">
+                        <li><a href="https://www.instagram.com/espacioyrigoyen/?hl=es"> Espacio Yrigoyen</a></li>
+                    </ul>
+                    <ul>
+                        <img src="Imagenes/logofb.png">
+                        <li><a href="https://www.facebook.com/espacioyrigoyen/"> Espacio Yrigoyen</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </form>
 
-        <form action="Contacto_gracias.html" method="POST" enctype="application/x-www-form-urlencoded">
-            <p>Nombre y Apellido</p>
-            <input name="name">
-            <p>Correo electronico</p>
-            <input name="correo">
-            <p>Mensaje</p>
-            <textarea></textarea> <br><br>
-            <input type="reset" value="Borrar">
-            <input type="submit" value="Enviar">
-        </form>
-</div>
-<!-- Fin Formulario -->
-<!-- Redes -->
-<div class="container mt-5">
-    <p>¡Seguinos en las redes y enterate de todas las novedades!</p>
-    <div>
-        <ul>
-            <img src="Imagenes/instagram.png">
-            <li><a href="https://www.instagram.com/espacioyrigoyen/?hl=es"> @espacioyrigoyen</a></li>
-        </ul>
-        <ul>
-            <img src="Imagenes/logofb.png">
-            <li><a href="https://www.facebook.com/espacioyrigoyen/"> Espacio Yrigoyen</a></li>
-        </ul>
-    </div>
-    <br>
-    <a href="index.html" target="blank"><img src="Imagenes/logo.png" alt="Logo" width="100" height="80">
-    </a>
-</div>
+        <!-- Fin Formulario -->
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
 </body>
 <!-- Footer -->
-<footer>Espacio Yrigoyen - Copyright All Rights Reserved © 2021</footer>
+<footer>
+    <a href="index.html" target="blank"><img src="Imagenes/logo.png" alt="Logo" width="100" height="80">
+    </a>
+    <br>
+    <br>
+    Espacio Yrigoyen - Copyright All Rights Reserved © 2021</footer>
 
 </html>
